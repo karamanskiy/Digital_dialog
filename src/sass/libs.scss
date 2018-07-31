@@ -1,0 +1,209 @@
+@import "bourbon";
+@import "vars";
+
+@import 'src/libs/bootstrap-sass/assets/stylesheets/_bootstrap';
+// @import 'src/libs/arcticModal/arcticmodal/jquery.arcticmodal';
+@import 'src/libs/FormStyler/jquery.formstyler';
+@import 'src/libs/FormStyler/jquery.formstyler.theme';
+// @import 'src/libs/magnific-popup/dist/magnific-popup';
+// @import 'src/libs/font-awesome/scss/font-awesome';
+// @import 'src/libs/animate.css/animate.min';
+// @import 'src/libs/bxslider-4/dist/jquery.bxslider.min';
+// @import 'src/libs/owl.carousel/dist/assets/owl.carousel.min';
+// @import 'src/libs/owl.carousel/dist/assets/owl.theme.default.min';
+
+
+.arcticmodal-container, .arcticmodal-overlay{	
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.arcticmodal-container{	
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+
+:first-child+html .arcticmodal-container{	height: 100%}
+
+.arcticmodal-container_i {
+	margin: 0 auto;
+	height: 100%;
+}
+
+.arcticmodal-container_i2 {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: middle;
+}
+
+#hidden-box, .hidden-box {display: none}
+
+
+// .bx-wrapper {
+// 	border: 0;
+// 	margin-bottom: 0;
+// }
+
+// .bx-wrapper .bx-viewport {
+//   left: 0;
+//   border: none;
+//   box-shadow: none;
+
+// }
+
+
+// .wrap-slider {
+// 	position: relative;
+// 	#nextBtn, #prevBtn {
+// 		// background-color: rgba(0,0,0,.55);
+// 		position: absolute;
+// 		width: 34px;
+// 		height: 57px;
+// 		transition: all .25s;
+// 		transform: scale(.7);
+// 		&:hover {opacity: 0.6;}
+// 	}
+// 	#nextBtn {
+// 		top: 48%;
+// 		right: 20px;
+// 	}
+// 	#prevBtn {
+// 		top: 48%;
+// 		left: 20px;
+// 	}
+// 	#nextBtn a, #prevBtn a {
+// 		display: block;
+// 		width: 34px;
+// 		height: 57px;
+// 	}
+// 	#nextBtn a {
+// 		background-image: url('../img/right-arr.png');
+// 		background-position: center center;
+// 	}
+// 	#prevBtn a {
+// 		background-image: url('../img/left-arr.png');
+// 		background-position: center center;
+// 	}
+// }
+
+
+
+.jq-selectbox.focused .jq-selectbox__select {border: 1px solid #fff;}
+.jq-selectbox__trigger {border: none;}
+.jq-selectbox .placeholder {color: #fff;}
+.jq-selectbox__trigger-arrow,
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+	border-top: 5px solid #eee;
+	opacity: .5;
+}
+.jq-selectbox__select:hover {background: none;}
+.jq-selectbox__dropdown {
+	margin-top: 13px;
+	border: none;
+}
+.jq-selectbox__dropdown,
+.jq-selectbox ul {min-height: 320px;}
+
+.jq-selectbox__select,
+.jq-selectbox__select:active {
+	height: 41px;
+	line-height: 41px;
+	background: none;
+	width: 195px;
+	box-sizing: border-box;
+	font-family: "MuseoSans500", sans-serif;
+	font-size: 14px;
+	padding-right: 33px;
+	color: #fff;
+	text-shadow: none;
+	box-shadow: none;
+	border: 1px solid #fff;
+}
+
+.jq-selectbox li {
+	font-family: "MuseoSans500", sans-serif;
+	font-size: 13px;
+	color: #707070;
+	padding: 6px 10px 6px;
+	border-radius: 4px;
+}
+
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+	background-color: #EFEFEF;
+	color: #707070;
+}
+
+.jq-selectbox__trigger-arrow {
+	top: 18px;
+}
+
+
+.arcticmodal-overlay {
+	// opacity: .7 !important;
+	background-color: #fff !important;
+}
+
+.popup-form {
+	position: relative;
+	max-width: 405px;
+	padding: 43px 52px;
+	background-color: #fff;
+	box-shadow: 0 0 22px #C1C5D3;
+	.title {margin-top: 0;margin-bottom: 11px;}
+	.subttl {
+		font-size: 18px;
+		font-family: $m500;
+		margin-bottom: 23px;
+	}
+	.main-input__text {
+		border-color: rgba(#707070, .1);
+		margin-bottom: 23px;
+		color: $main-color;
+	}
+	.main-btn {
+		width: 100%;
+	}
+}
+
+.popup-table {
+	position: relative;
+	width: 940px;
+	padding: 32px 40px 65px 40px;
+	margin: 30px;
+	background-color: #fff;
+	box-shadow: 0 0 22px #C1C5D3;
+	.title {margin-bottom: 30px;}
+}
+.popup-table__price {
+	font-size: 22px;
+	font-family: $m900;
+	margin: 30px 0;
+}
+.popup-table__btn {min-width: 300px;}
+
+.arcticmodal-close.box-modal_close {
+	display: block;
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	background-image: url('../img/close-btn.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 12px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	transition: all .2s;
+	&:hover {transform: rotate(180deg);}
+}
+
+#modal_thank, #modal_error {text-align: center;}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "MuseoSans100";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-100.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans300";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans500";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans700";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSans900";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-900.ttf") format("truetype"); }

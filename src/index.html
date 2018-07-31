@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Цифровой диалог</title>
+	<!-- Картинка появляющаяся в социальных сетях, при отправке ссылки на сайт в сообщении или на стену -->
+	<meta property="og:image" content="img/favicon.png">
+	<!-- init viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- Icon For Apple Devices -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon.png">
+
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- <link rel="stylesheet" href="css/header.css"> -->
+
+	<!-- fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet"> -->
+
+
+
+</head>
+<body>
+
+	<!-- <div class="main-preloader">
+	  <svg class="main-preloader__svg-ico" id="logoId" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="196" height="45" viewBox="0 0 196 45"><defs id="SvgjsDefs1001"></defs><path id="logoId2" d="M167.221 98.3675V92.15880000000001H161.018V85.9514H167.221V70.405H161.018V64.1969H154.817V57.9894H142.40800000000002V64.1969H136.203V70.405H130.001V85.9514H136.203V92.15880000000001H130.001V98.3675H145.486V92.15880000000001H151.69V98.3675ZM161.018 82.8229H154.817V76.6148H161.018ZM142.408 82.8229H136.20299999999997V76.6148H142.408ZM210.892 98.3675V92.15880000000001H204.69299999999998V85.9514H210.892V64.1969H204.69299999999998V57.9894H198.49099999999999V64.1969H186.081V57.9894H179.879V64.1969H173.62199999999999V85.9514H179.879V92.15880000000001H173.62199999999999V98.3675H189.158V85.9514H195.35999999999999V98.3675ZM204.693 76.6148H198.491V70.405H204.693ZM186.081 76.6148H179.879V70.405H186.081ZM275.685 98.4127V87.0239H274.271L267.677 95.7431V87.0239H265.853V98.4127H267.51800000000003L273.86300000000006 90.1066V98.4127ZM263.575 101.997V96.9103H261.84299999999996V87.02390000000001H254.06699999999995L253.13399999999996 94.80740000000002C253.02099999999996 95.74310000000001 252.40199999999996 96.63240000000002 251.53799999999995 96.91030000000002L250.87499999999994 97.11410000000002V101.99700000000003H252.53999999999994V98.41270000000003H261.9099999999999V101.99700000000003ZM260.018 96.9103H253.81799999999998C254.361 96.4726 254.66 95.81240000000001 254.75099999999998 95.10340000000001L255.54799999999997 88.50590000000001H260.018ZM287.542 98.4127V89.9221C287.542 87.7559 285.99199999999996 86.7743 283.86999999999995 86.7743C282.13599999999997 86.7743 280.42499999999995 87.0698 279.05899999999997 87.2524V88.75909999999999C280.42499999999995 88.57879999999999 282.044 88.34849999999999 283.78299999999996 88.34849999999999C284.717 88.34849999999999 285.71599999999995 88.71329999999999 285.71599999999995 90.21809999999999V91.3624H281.61099999999993C279.3789999999999 91.3624 278.07899999999995 92.7533 278.07899999999995 94.4661V95.4242C278.07899999999995 97.6615 279.62899999999996 98.6647 281.95399999999995 98.6647C283.48199999999997 98.6647 284.82599999999996 98.2077 286.03799999999995 97.70609999999999L286.376 98.41269999999999ZM285.716 96.3152C284.37600000000003 96.8169 283.461 97.0894 281.954 97.0894C280.90500000000003 97.0894 279.901 96.7029 279.901 95.4242V94.4661C279.901 93.4611 280.634 92.9583 281.317 92.9583H285.716ZM300.468 98.4127V87.0239H292.69100000000003L291.87 95.44709999999999C291.732 96.79149999999998 291.233 97.1141 290.342 97.1141H289.062V98.5038C289.589 98.5942 290.229 98.6883 290.73 98.6883C292.485 98.6883 293.509 97.5904 293.69300000000004 95.605L294.37800000000004 88.5059H298.64400000000006V98.4127ZM313.121 94.9678V90.61C313.121 87.8463 310.454 86.7056 308.102 86.7056C305.75199999999995 86.7056 303.085 87.8463 303.085 90.61V94.9678C303.085 97.7284 305.75199999999995 98.7341 308.102 98.7341C310.45399999999995 98.7341 313.121 97.7284 313.121 94.9678ZM311.32 94.9678C311.32 96.7029 309.427 97.24849999999999 308.102 97.24849999999999C306.78 97.24849999999999 304.887 96.7029 304.887 94.9678V90.61C304.887 88.7591 306.665 88.1887 308.102 88.1887C309.536 88.1887 311.32 88.7591 311.32 90.61ZM322.9 88.5059V87.0239H315.741V98.4127H317.562V88.5059ZM323.464 95.8359V98.4127H325.998V95.8359ZM234.309 79.1754V74.08449999999999H232.575V64.20349999999999H230.75V74.08449999999999H224.729V64.20349999999999H222.90300000000002V75.59289999999999H232.66600000000003V79.17539999999998ZM246.531 75.5929V64.2035H245.115L238.526 72.9209V64.2035H236.70100000000002V75.5929H238.365L244.708 67.2844V75.5929ZM262.653 72.0533V67.87819999999999C262.653 65.1163 259.983 63.974399999999996 257.63800000000003 63.974399999999996H257.045V60.345H255.21900000000002V63.974399999999996H254.62400000000002C252.276 63.974399999999996 249.61100000000002 65.1163 249.61100000000002 67.87819999999999V72.0533C249.61100000000002 74.8158 252.276 75.8202 254.62400000000002 75.8202H255.21900000000002V80.3167H257.045V75.8202H257.63800000000003C259.98300000000006 75.8202 262.653 74.8158 262.653 72.0533ZM260.853 72.0533C260.853 73.7884 258.96000000000004 74.2448 257.63800000000003 74.2448H257.045V65.5498H257.63800000000003C259.07300000000004 65.5498 260.853 66.02850000000001 260.853 67.8782ZM255.219 74.2448H254.624C253.304 74.2448 251.41 73.7884 251.41 72.0533V67.87819999999999C251.41 66.0285 253.189 65.54979999999999 254.624 65.54979999999999H255.219ZM275.677 72.4886V67.4893C275.677 65.7554 274.624 64.2035 272.848 64.2035H265.616V80.3167H267.442V75.113C268.72 75.4802 270.342 75.9131 271.8 75.9131C273.805 75.9131 275.677 74.7242 275.677 72.4886ZM273.851 72.4886C273.851 73.6751 272.963 74.4287 271.8 74.4287C270.479 74.4287 268.927 73.9711 267.442 73.5171V65.6873H272.368C272.894 65.6873 273.851 66.12079999999999 273.851 67.39829999999999ZM288.67 72.1461V67.786C288.67 65.0241 285.999 63.8846 283.65200000000004 63.8846C281.302 63.8846 278.636 65.0241 278.636 67.786V72.1461C278.636 74.9056 281.302 75.9131 283.65200000000004 75.9131C285.999 75.9131 288.67 74.9056 288.67 72.1461ZM286.867 72.1461C286.867 73.88130000000001 284.971 74.4287 283.65200000000004 74.4287C282.33000000000004 74.4287 280.43700000000007 73.88130000000001 280.43700000000007 72.1461V67.786C280.43700000000007 65.93690000000001 282.21600000000007 65.3659 283.65200000000004 65.3659C285.09200000000004 65.3659 286.867 65.9369 286.867 67.786ZM301.005 72.4645C301.005 71.3467 300.389 69.8419 298.954 69.453C300.18600000000004 68.8133 300.458 67.7414 300.458 66.8503C300.458 65.0699 298.83700000000005 64.2035 297.40200000000004 64.2035H291.74500000000006V75.5929H297.35400000000004C299.569 75.5929 301.00500000000005 74.5861 301.00500000000005 72.4645ZM298.63 67.1704C298.63 68.0603 298.269 68.8826 296.92 68.8826H293.59200000000004V65.6873H296.92C298.19800000000004 65.6873 298.63 66.2799 298.63 67.17039999999999ZM299.112 72.2589C299.112 73.2187 298.723 74.08449999999999 297.05800000000005 74.08449999999999H293.59200000000004V70.34289999999999H297.42400000000004C298.61300000000006 70.34289999999999 299.112 71.37019999999998 299.112 72.25889999999998ZM313.434 72.1461V67.786C313.434 65.0241 310.76700000000005 63.8846 308.41600000000005 63.8846C306.07000000000005 63.8846 303.40100000000007 65.0241 303.40100000000007 67.786V72.1461C303.40100000000007 74.9056 306.07000000000005 75.9131 308.41600000000005 75.9131C310.76700000000005 75.9131 313.434 74.9056 313.434 72.1461ZM311.631 72.1461C311.631 73.88130000000001 309.74199999999996 74.4287 308.416 74.4287C307.093 74.4287 305.202 73.88130000000001 305.202 72.1461V67.786C305.202 65.93690000000001 306.98 65.3659 308.416 65.3659C309.851 65.3659 311.631 65.9369 311.631 67.786ZM325.041 61.942V60.6211C323.829 61.0546 322.37 61.35 321.09499999999997 61.35C319.81699999999995 61.35 318.356 61.0546 317.14899999999994 60.6211V61.942C318.35599999999994 62.3761 319.81699999999995 62.6734 321.09499999999997 62.6734C322.36999999999995 62.6734 323.82899999999995 62.3761 325.041 61.942ZM325.998 75.5929V64.2035H324.584L317.991 72.9209V64.2035H316.169V75.5929H317.835L324.17199999999997 67.2844V75.5929Z " fill-opacity="1" transform="matrix(1,0,0,1,-130,-57)"></path></svg>
+	</div> -->
+
+	<div class="blur-overlay"></div>
+
+	<header class="main-header">
+		<div class="container">
+			<div class="main-header-wrap">
+				<a href="/" class="main-header__logo">
+					<img class="logo_busines" src="img/logo_busines.svg" width="146" height="68" alt="logo">
+					<img class="logo_naselenie" src="img/logo.svg" alt="logo">
+				</a>
+				<div class="main-header__right">
+
+					<a href="http://193.35.48.10/client/index.php?r=site/login" target="_blank" class="main-header__cabinet">Личный кабинет</a>
+
+					<form class="main-header__select">
+						<select name="city" id="select-city">
+							<option></option>
+							<option>Ростов-на-Дону</option>
+							<option>Батайск</option>
+							<option>Аксай</option>
+							<option>Азов</option>
+							<option>Шахты</option>
+							<option>Зерноград</option>
+							<option>х.Ленина</option>
+							<option>Новочеркасск</option>
+							<option>Каменск</option>
+							<option>Сальск</option>
+							<option>Гуково</option>
+						</select>
+					</form>
+
+					<a href="tel:+78633089999" class="main-header__phone-link">
+						<span class="main-header__phone-ico">
+							<img class="main-header__phone-ico-img" src="img/tel-icon.svg" alt="tel-icon">
+						</span>
+						<span class="main-header__phone-text">+7 (863) 308-9-999</span>
+					</a>
+
+					<div class="close-menu-btn"></div>
+				</div>
+
+				<div class="main-header__hamb"></div>
+			</div>
+		</div>
+	</header>
+
+	<section class="head-section2">
+		<div class="container">
+			
+
+			<div class="main-text">
+				<h2 class="main-title">ПОДКЛЮЧАЕМ <br class="br">ОПТИЧЕСКИЙ ИНТЕРНЕТ <br class="br">И ЦИФРОВОЕ ТЕЛЕВИДЕНИЕ</h2>
+				<p class="main-subtitle">Оцените качественно новый сервис. Оставьте заявку, <br class="br">и наш менеджер позвонит вам в ближайшее время</p>
+			</div>
+
+			<form class="head-section__form">
+				<div class="form-row">
+					<div class="form-col1">
+						<input type="tel" name="phone" class="main-input__text" placeholder="Введите ваш телефон" maxlength="18">
+					</div>
+					<div class="form-col2">
+						<button class="main-btn main-btn--full-width" type="submit">
+							Подключить интернет
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+
+	<section class="zayavka-section zayavka-section2">
+		<div class="container">
+			<div class="left-zay">
+				<div class="big-title">ЕДИНАЯ СЕТЬ <br class="br">В ДОМ И ОФИС <br class="br">СО СКИДКОЙ 50%</div>
+				<div class="simp-text">Даем скидку 50 % при подключении <br class="br">интернета и цифрового телевидения <br class="br">в дом для пользователей <br class="br">интернета для бизнеса</div>
+			</div>
+			<form class="wrap-zayavka">
+				<h3 class="title">ОСТАВЬТЕ ЗАЯВКУ</h3>
+				<div class="subtitle">на подключение оптического <br class="br">интернета и цифрового <br class="br">телевидения со скидкой 50%</div>
+				<input type="text" name="name" class="form_input" placeholder="Введите ваше имя">
+				<input type="tel" name="tel" class="form_input" placeholder="Укажите ваш телефон" required>
+				<button type="submit" class="main-btn two-row-btn">Подключить интернет и ТВ <br class="br">со скидкой</button>
+			</form>
+		</div>
+	</section>
+
+
+	<section class="tarif-section">
+		<div class="container">
+			<h3 class="title">Оптический интернет</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="tarif-item">
+						<div class="tarif-item__icons"><img src="img/baz_internet.svg" width="220" alt="baz_internet"></div>
+						<div class="tarif-item__header">«Базовый»</div>
+						<div class="tarif-item__descr">Скорость интернета <br class="br">50 мбит/сек</div>
+						<div class="tarif-item__price">750 руб/мес</div>
+						<div class="tarif-item__btn main-btn internet_baza">Подключиться</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="tarif-item">
+						<div class="tarif-item__icons"><img src="img/prem-internet.svg" width="220" alt="prem_internet"></div>
+						<div class="tarif-item__header">«Премиум»</div>
+						<div class="tarif-item__descr">Скорость интернета <br class="br">100 мбит/сек</div>
+						<div class="tarif-item__price">1000 руб/мес</div>
+						<div class="tarif-item__btn main-btn internet_prem">Подключиться</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="title">Цифровое ТВ</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="tarif-item">
+						<div class="tarif-item__header">Базовый пакет ТВ</div>
+						<div class="tarif-item__descr">100 каналов</div>
+						<br>
+						<div class="tarif-item__descr">При подключении тарифа «Базовый»</div>
+						<div class="tarif-item__price">Бесплатно</div>
+						<div class="tarif-item__btn main-btn cifr_tv">Подключиться</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="tarif-item">
+						<div class="tarif-item__header">Базовый пакет ТВ</div>
+						<div class="tarif-item__descr">100 каналов</div>
+						<br>
+						<div class="tarif-item__descr">При подключении тарифа «Премиум»</div>
+						<div class="tarif-item__price">Бесплатно</div>
+						<div class="tarif-item__btn main-btn cifr_tv">Подключиться</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="advant-section">
+		<div class="container">
+			<h2 class="big-title">ОПТИЧЕСКИЙ ИНТЕРНЕТ ОТ КОМПАНИИ <br class="br">«ЦИФРОВОЙ ДИАЛОГ» – ЭТО</h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<div class="advant-section__item">
+						<div class="wrap-img"><img src="img/advant1.svg" width="85" alt="advant1"></div>
+						<div class="advant-section__text">Отсутствие перебоев <br class="br">и падения скорости <br class="br">благодаря надежной <br class="br">волоконно-оптической <br class="br">технологии GPON</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="advant-section__item">
+						<div class="wrap-img"><img src="img/advant2.svg" width="70" alt="advant2"></div>
+						<div class="advant-section__text">Технический специалист, <br class="br">который решит вопрос <br class="br">с первого звонка в любое <br class="br">время суток</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="advant-section__item">
+						<div class="wrap-img"><img src="img/advant3.svg" width="97" alt="advant3"></div>
+						<div class="advant-section__text">Безлимитные <br class="br">тарифные <br class="br">планы  </div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="advant-section__item">
+						<div class="wrap-img"><img src="img/advant4.svg" width="80" alt="advant4"></div>
+						<div class="advant-section__text">IP-адрес для систем <br class="br">видеонаблюдения <br class="br">и других сервисов</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section-tv">
+		<div class="container">
+			<h2 class="big-title">ПОДКЛЮЧИТЕ ЦИФРОВОЕ ТЕЛЕВИДЕНИЕ <br class="br">НОВОГО ПОКОЛЕНИЯ</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="section-tv__item">
+						<div class="section-tv__icon"><img src="img/tv-icon1.svg" width="52" alt="tv1"></div>
+						<div class="section-tv__text">30 каналов <br class="br">в HD-качестве</div>
+					</div>
+					<div class="section-tv__item">
+						<div class="section-tv__icon"><img src="img/tv-icon2.svg" width="45" alt="tv2"></div>
+						<div class="section-tv__text">Архив программы передач <br class="br">в записи до 3 дней</div>
+					</div>
+					<div class="section-tv__item">
+						<div class="section-tv__icon"><img src="img/tv-icon3.svg" width="39" alt="tv3"></div>
+						<div class="section-tv__text">Перемотка, пауза и продолжение <br class="br">просмотра на любых устройствах</div>
+					</div>
+					<div class="main-btn section-tv__btn cifr_tv">Подключить ТВ</div>
+				</div>
+				<div class="col-md-8 right-plazma">
+					<img src="img/plazma.jpg" alt="plazma">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="packets-tv">
+		<div class="container">
+			<h2 class="big-title">ПАКЕТЫ ЦИФРОВОГО ТЕЛЕВИДЕНИЯ</h2>
+			<h3 class="title">Основные пакеты</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="packets-tv__item">
+						<div class="packets-tv__icons"><img src="img/pc1.svg" alt="pc1"></div>
+						<div class="packets-tv__header">«Бесплатный»</div>
+						<div class="packets-tv__descr">29 основных <br class="br">каналов</div>
+						<div class="packets-tv__more packettv_free">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="packets-tv__item">
+						<div class="packets-tv__icons"><img src="img/pc2.svg" alt="pc2"></div>
+						<div class="packets-tv__header">«Стартовый»</div>
+						<div class="packets-tv__descr">72 федеральных и местных <br class="br">канала</div>
+						<div class="packets-tv__more modal_packettv_start">Подробнее</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="title">Дополнительные пакеты</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc3.svg" alt="pc3"></div>
+						<div class="packets-tv__header">«Домашний»</div>
+						<div class="packets-tv__descr">122 российских <br class="br">и зарубежных канала</div>
+						<div class="packets-tv__more packettv_home">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc4.svg" alt="pc4"></div>
+						<div class="packets-tv__header">«Максимальный»</div>
+						<div class="packets-tv__descr">173 российских <br class="br">и зарубежных канала</div>
+						<div class="packets-tv__more modal_packettv_max">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc5.svg" alt="pc5"></div>
+						<div class="packets-tv__header">«HD»</div>
+						<div class="packets-tv__descr">24 канала <br class="br">в HD-качестве</div>
+						<div class="packets-tv__more modal_packettv_hd">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc6.svg" alt="pc6"></div>
+						<div class="packets-tv__header">«Амедиа»</div>
+						<div class="packets-tv__descr">для любителей <br class="br">сериалов</div>
+						<div class="packets-tv__more modal_packettv_amedia">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc7.svg" alt="pc7"></div>
+						<div class="packets-tv__header">«Настрой кино!»</div>
+						<div class="packets-tv__descr">для любителей <br class="br">большого кино</div>
+						<div class="packets-tv__more modal_packettv_nastroykino">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc8.svg" alt="pc8"></div>
+						<div class="packets-tv__header">«Эгоист»</div>
+						<div class="packets-tv__descr">для любителей <br class="br">экспериментального</div>
+						<div class="packets-tv__more modal_packettv_egoist">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc9.svg" alt="pc9"></div>
+						<div class="packets-tv__header">«Матч! Футбол»</div>
+						<div class="packets-tv__descr">для футбольных <br class="br">болельщиков</div>
+						<div class="packets-tv__more modal_packettv_match">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc10.svg" alt="pc10"></div>
+						<div class="packets-tv__header">«Наш футбол»</div>
+						<div class="packets-tv__descr">для любителей <br class="br">российского футбола</div>
+						<div class="packets-tv__more modal_packettv_ourfotball">Подробнее</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="packets-tv__item packets-tv__item-small">
+						<div class="packets-tv__icons"><img src="img/pc11.svg" alt="pc11"></div>
+						<div class="packets-tv__header">«Нескучная ночь»</div>
+						<div class="packets-tv__descr">для тех, кто любит <br class="br">погорячее</div>
+						<div class="packets-tv__more modal_packettv_night">Подробнее</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="our-preimusch">
+		<div class="container">
+			<h2 class="big-title">НАШИ ПРЕИМУЩЕСТВА</h2>
+			<div id="our-preimusch__slider-next"></div>
+			<div id="our-preimusch__slider-prev"></div>
+			<div class="row our-preimusch__slider">
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim1.svg" width="59" alt="preim1"></div>
+						<div class="our-preimusch__text">13 лет <br class="br">на рынке</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim2.svg" width="67" alt="preim2"></div>
+						<div class="our-preimusch__text">Работаем в 10 городах <br class="br">Ростовской области</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim3.svg" width="76" alt="preim3"></div>
+						<div class="our-preimusch__text">10 000 клиентов <br class="br">выбрали нас  </div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim4.svg" width="78" alt="preim4"></div>
+						<div class="our-preimusch__text">100 специалистов <br class="br">с опытом работы <br class="br">в сфере связи</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim5.svg" width="52" alt="preim5"></div>
+						<div class="our-preimusch__text">Скидка при подключении <br class="br">соседа. Подробности <br class="br">по телефону  <br class="br"><a href="tel:+78633089999">+7 (863) 308-9-999</a> </div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim6.svg" width="42" alt="preim6"></div>
+						<div class="our-preimusch__text">Скидка при подключении <br class="br">нескольких услуг</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="our-preimusch__item">
+						<div class="our-preimusch__img"><img src="img/preim7.svg" width="64" alt="preim7"></div>
+						<div class="our-preimusch__text">Возможность <br class="br">подключения в кредит <br class="br">от ПАО «Почта Банк»</div>
+					</div>
+				</div>
+
+				
+			</div> <!-- row -->
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<form class="our-preimusch__form">
+						<div class="our-preimusch__formtext">Узнайте, когда мы сможем подключить <br class="br">оптический интернет и цифровое <br class="br">телевидение в вашем доме</div>
+						<input class="our-preimusch__tel main-input__text" type="tel" name="tel" placeholder="Введите ваш телефон" required>
+						<button type="submit" class="our-preimusch__submit main-btn">Узнать скорость подключения</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="reviews-section">
+		<div class="container">
+			<h2 class="big-title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+			<div class="wrap-btns-revs">
+				<div id="reviews-section__slider-next"></div>
+				<div id="reviews-section__slider-prev"></div>
+			</div>
+			<div class="row reviews-section__slider">
+				<div class="col-md-4 col-sm-4 reviews-section__item">
+					<div class="rev-photo">
+						<img src="img/rev1.jpg" alt="rev1">
+					</div>
+					<div class="rev-name">Азикина <br class="br">Елена Юрьевна</div>
+					<div class="rev-info">г.Батайск, 05.04.2017</div>
+					<div class="rev-content">«Цифровой диалог» - молодцы! Ребята очень быстро работают, начиная с обработки заявки и заканчивая подключением к сети. <br>На нашей улице не было оптоволокна, «Цифровой диалог» тянул кабель, и тут же, дома, которые подали заявки, сразу же подключал к своим услугам. Быстро, все четко. Инет стабильный, летает. По спидтесту мой, подключенный к 100 мегабитам, показывает не ниже 80, провалов пока (тьфу 3 раза) нет. <br><br>К тому же я воспользовалась очень удобным для меня предложением по рассрочке на 3 месяца. Итого, на сегодняшний день для меня лучший провайдер (есть с чем сравнивать- рабочий ростовский-поменяли несколько провайдеров, скорость плохая), рекомендую. <br>Компании хочется пожелать стабильного роста и успехов!</div>
+					<div class="read-more">Подробнее</div>
+				</div>
+				<div class="col-md-4 col-sm-4 reviews-section__item">
+					<div class="rev-photo">
+						<img src="img/rev2.jpg" alt="rev2">
+					</div>
+					<div class="rev-name">Чепульченко <br class="br">Дмитрий Евгеньевич</div>
+					<div class="rev-info">г.Батайск, 06.04.2017</div>
+					<div class="rev-content">Рекомендую. <br>Компании хочется пожелать стабильного роста и успехов!</div>
+				</div>
+				<div class="col-md-4 col-sm-4 reviews-section__item">
+					<div class="rev-photo">
+						<img src="img/rev3.jpg" alt="rev3">
+					</div>
+					<div class="rev-name">Соколов <br class="br">Александр Анатольевич</div>
+					<div class="rev-info">г.Батайск, 09.04.2017</div>
+					<div class="rev-content">Я переехал в частный дом год назад и огромной проблемой было отсутствие интернета. Был конечно мобильный, но скорость была низкая, а ограничения по трафику исключали просмотр кино в каком либо приемлемом качестве! <br class="br">Но в марте 2018 года в наш район Батайска (Восточный) пришел «Цифровой Диалог». <br>За 1,5 часа монтажники прокинули кабель, настроили оборудование и уже месяц мы пользуемся их интернетом. <br class="br"><br class="br"> Скорость постоянная, 60-70 мегабит на кабеле, при том, что тариф у меня 50! За месяц было лишь одно отключение. Позвонил в поддержку - сказали перезагрузка оборудования, займет 20 минут. И действительно все заработало через это время. <br>Каких либо других проблем не было. </div>
+					<div class="read-more">Подробнее</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="zayavka-section">
+		<div class="container">
+			<div class="left-zay">
+				<div class="big-title">ОЦЕНИТЕ КАЧЕСТВО <br class="br">ОПТИЧЕСКОГО ИНТЕРНЕТА <br class="br">И ЦИФРОВОГО ТЕЛЕВИДЕНИЯ <br class="br">УЖЕ СЕЙЧАС</div>
+				<ul class="list-zay">
+					<li>Ростов-на-Дону</li>
+					<li>Батайск</li>
+					<li>Аксай</li>
+					<li>Азов</li>
+					<li>Зерноград</li>
+					<li>х. Ленина</li>
+					<li>Новочеркасск</li>
+					<li>Каменск</li>
+					<li>Сальск</li>
+					<li>Гуково</li>
+				</ul>
+			</div>
+			<form class="wrap-zayavka">
+				<h3 class="title">ОСТАВЬТЕ ЗАЯВКУ</h3>
+				<div class="subtitle">на подключение оптического <br class="br">интернета и цифрового <br class="br">телевидения</div>
+				<input type="text" name="name" class="form_input" placeholder="Введите ваше имя">
+				<input type="tel" name="tel" class="form_input" placeholder="Укажите ваш телефон" required>
+				<button type="submit" class="main-btn">Подключить интернет и ТВ</button>
+			</form>
+		</div>
+	</section>
+
+
+	<section class="contact-section">
+		<div class="container">
+			<h2 class="big-title">Контакты</h2>
+			<div class="contact-section__contacts-wrap">
+				<div class="contact-section__contact-block">
+					<div class="contact-section__contact-title">
+						Адрес:
+					</div>
+					<p class="contact-section__contact-text">
+						344019, г. Ростов-на-Дону, <br class="br">
+						ул. Мясникова, д. 54, офис 15
+					</p>
+				</div>
+				<div class="contact-section__contact-block">
+					<div class="contact-section__contact-title">
+						Офис:
+					</div>
+					<a href="tel:+78633089999" class="contact-section__contact-tel">
+						+7 (863) 308-9-999
+					</a>
+					<p class="contact-section__contact-text-small">
+						Время работы: 8:00-17:00
+					</p>
+				</div>
+				<div class="contact-section__contact-block">
+					<div class="contact-section__contact-title">
+						Техподдержка:
+					</div>
+					<a href="tel:+79381108888 " class="contact-section__contact-tel">
+						+7 (938) 110-8-888
+					</a>
+					<p class="contact-section__contact-text-small">
+						Время работы: круглосуточно
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="sect-footer">
+		<div class="container">
+			<div class="page-footer__wrap">
+				<div class="page-footer__left-section">
+					<p class="footer-copyright__text">
+						©&nbsp;2005-2018&nbsp;ООО «Цифровой Диалог-Т». <br>Авторские права защищены.
+					</p>
+				</div>
+				<div class="page-footer__right-section">
+					<a href="http://potipako.ru/" target="_blank" class="footer-company__wrap">
+						<span class="footer-company__ico">
+							<img src="img/potipako.svg" width="31" alt="potipako" class="footer-company__ico-img">
+						</span>
+						<p class="footer-company__text">
+							Разработано агентством <br class="br">
+							<a href="http://potipako.ru/" target="_blank" class="footer-company__text-link">
+								POTIPAKO
+							</a>
+							©&nbsp;2018
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- POP-UPs -->
+	<div class="hidden-box">
+
+		<div id="modal_internet_baza">
+			<form class="popup-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ОСТАВЬТЕ ЗАЯВКУ <br class="br">НА ПОДКЛЮЧЕНИЕ <br class="br">ТАРИФА <br class="br">«БАЗОВЫЙ»</h3>
+				<div class="subttl">и наш менеджер свяжется с вами в ближайшее время</div>
+				<input type="text" name="name" class="main-input__text" placeholder="Введите ваше имя">
+				<input type="tel" name="tel" class="main-input__text" placeholder="Укажите ваш телефон" required>
+				<input type="hidden" name="type" value="Тариф 'Базовый'">
+				<button type="submit" class="main-btn">Оставить заявку</button>
+			</form>
+		</div>
+
+		<div id="modal_internet_prem">
+			<form class="popup-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ОСТАВЬТЕ ЗАЯВКУ <br class="br">НА ПОДКЛЮЧЕНИЕ <br class="br">ТАРИФА <br class="br">«ПРЕМИУМ»</h3>
+				<div class="subttl">и наш менеджер свяжется с вами в ближайшее время</div>
+				<input type="text" name="name" class="main-input__text" placeholder="Введите ваше имя">
+				<input type="tel" name="tel" class="main-input__text" placeholder="Укажите ваш телефон" required>
+				<input type="hidden" name="type" value="Тариф 'Премиум'">
+				<button type="submit" class="main-btn">Оставить заявку</button>
+			</form>
+		</div>
+
+		<div id="modal_cifr_tv">
+			<form class="popup-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ОСТАВЬТЕ ЗАЯВКУ <br class="br">НА ПОДКЛЮЧЕНИЕ <br class="br">ЦИФРОВОГО  <br class="br">ТЕЛЕВИДЕНИЯ</h3>
+				<div class="subttl">и наш менеджер свяжется с вами в ближайшее время</div>
+				<input type="text" name="name" class="main-input__text" placeholder="Введите ваше имя">
+				<input type="tel" name="tel" class="main-input__text" placeholder="Укажите ваш телефон" required>
+				<input id="type_cifrtv" type="hidden" name="type" value="Цифровое телевидение">
+				<button type="submit" class="main-btn">Оставить заявку</button>
+			</form>
+		</div>
+
+		<div id="modal_thank">
+			<div class="popup-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">СПАСИБО!</h3>
+				<div class="subttl">Наш менеджер свяжется с вами с ближайшее время</div>
+				<button class="main-btn arcticmodal-close">Вернуться на сайт</button>
+			</div>
+		</div>
+
+		<div id="modal_error">
+			<div class="popup-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ОШИБКА!</h3>
+				<div class="subttl">Вы не заполнили обязательные поля или допустили ошибку при заполнении!</div>
+				<button class="main-btn arcticmodal-close">Вернуться</button>
+			</div>
+		</div>
+
+		<div id="modal_packettv_free">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «БЕСПЛАТНЫЙ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 245px;">
+					<div class="popup-table__item"><span class="numb">1</span>Первый канал</div>
+					<div class="popup-table__item"><span class="numb">2</span>Россия</div>
+					<div class="popup-table__item"><span class="numb">3</span>Матч ТВ</div>
+					<div class="popup-table__item"><span class="numb">4</span>НТВ</div>
+					<div class="popup-table__item"><span class="numb">5</span>5 канал</div>
+					<div class="popup-table__item"><span class="numb">6</span>Россия К</div>
+					<div class="popup-table__item"><span class="numb">7</span>Россия 24</div>
+					<div class="popup-table__item"><span class="numb">8</span>Карусель</div>
+
+					<div class="popup-table__item"><span class="numb">9</span>ОТР</div>
+					<div class="popup-table__item"><span class="numb">10</span>ТВ Центр</div>
+					<div class="popup-table__item"><span class="numb">11</span>РЕН ТВ</div>
+					<div class="popup-table__item"><span class="numb">12</span>Спас</div>
+					<div class="popup-table__item"><span class="numb">13</span>СТС</div>
+					<div class="popup-table__item"><span class="numb">14</span>Домашний</div>
+					<div class="popup-table__item"><span class="numb">15</span>ТВ 3</div>
+					<div class="popup-table__item"><span class="numb">16</span>Пятница!</div>
+
+					<div class="popup-table__item"><span class="numb">17</span>Звезда</div>
+					<div class="popup-table__item"><span class="numb">18</span>Мир</div>
+					<div class="popup-table__item"><span class="numb">19</span>ТНТ</div>
+					<div class="popup-table__item"><span class="numb">20</span>Муз ТВ</div>
+					<div class="popup-table__item"><span class="numb">21</span>Вместе РФ</div>
+					<div class="popup-table__item"><span class="numb">22</span>Красная линия</div>
+					<div class="popup-table__item"><span class="numb">23</span>ЛДПР ТВ</div>
+					<div class="popup-table__item"><span class="numb">24</span>Ювелирочка Мода</div>
+
+					<div class="popup-table__item"><span class="numb">25</span>Ювелирочка</div>
+					<div class="popup-table__item"><span class="numb">26</span>Topshop TV</div>
+					<div class="popup-table__item"><span class="numb">27</span>TV Mall</div>
+					<div class="popup-table__item"><span class="numb">28</span>Shop&Show</div>
+					<div class="popup-table__item"><span class="numb">29</span>TV Sale</div>
+					<div class="popup-table__item"></div>
+					<div class="popup-table__item"></div>
+					<div class="popup-table__item"></div>
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">Бесплатно</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_start">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «СТАРТОВЫЙ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 750px;">
+					<div class="popup-table__item"><span class="numb">1</span>5 канал</div>
+					<div class="popup-table__item"><span class="numb">2</span>7TV</div>
+					<div class="popup-table__item"><span class="numb">3</span>8 канал</div>
+					<div class="popup-table__item"><span class="numb">4</span>9 Волна</div>
+					<div class="popup-table__item"><span class="numb">5</span>Arrirang TV</div>
+					<div class="popup-table__item"><span class="numb">6</span>Deutsche Welle</div>
+					<div class="popup-table__item"><span class="numb">7</span>Disney Channel</div>
+					<div class="popup-table__item"><span class="numb">8</span>France 24</div>
+					<div class="popup-table__item"><span class="numb">9</span>GlobalStar TV</div>
+					<div class="popup-table__item"><span class="numb">10</span>Hard Life TV</div>
+					<div class="popup-table__item"><span class="numb">11</span>KBS World</div>
+					<div class="popup-table__item"><span class="numb">12</span>78</div>
+					<div class="popup-table__item"><span class="numb">13</span>Luxury World</div>
+					<div class="popup-table__item"><span class="numb">14</span>NHK World TV</div>
+					<div class="popup-table__item"><span class="numb">15</span>NHK World TV HD</div>
+					<div class="popup-table__item"><span class="numb">16</span>O2TV</div>
+					<div class="popup-table__item"><span class="numb">17</span>Ovideo.ru</div>
+					<div class="popup-table__item"><span class="numb">18</span>RT</div>
+					<div class="popup-table__item"><span class="numb">19</span>RT HD</div>
+					<div class="popup-table__item"><span class="numb">20</span>RTД HD</div>
+					<div class="popup-table__item"><span class="numb">21</span>RU.TV</div>
+					<div class="popup-table__item"><span class="numb">22</span>Shop 24</div>
+					<div class="popup-table__item"><span class="numb">23</span>Shop&Show</div>
+					<div class="popup-table__item"><span class="numb">24</span>TMB</div>
+
+					<div class="popup-table__item"><span class="numb">25</span>TOPSHOP TV</div>
+					<div class="popup-table__item"><span class="numb">26</span>TV Mall</div>
+					<div class="popup-table__item"><span class="numb">27</span>TV Sale</div>
+					<div class="popup-table__item"><span class="numb">28</span>TVMChannel</div>
+					<div class="popup-table__item"><span class="numb">29</span>World Fashion</div>
+					<div class="popup-table__item"><span class="numb">30</span>Архыз24</div>
+					<div class="popup-table__item"><span class="numb">31</span>Большая Азия</div>
+					<div class="popup-table__item"><span class="numb">32</span>БСТ</div>
+					<div class="popup-table__item"><span class="numb">33</span>Вместе.РФ</div>
+					<div class="popup-table__item"><span class="numb">34</span>Домашний</div>
+					<div class="popup-table__item"><span class="numb">35</span>Европа Плюс ТВ</div>
+					<div class="popup-table__item"><span class="numb">36</span>Звезда</div>
+					<div class="popup-table__item"><span class="numb">37</span>Калейдоскоп ТВ</div>
+					<div class="popup-table__item"><span class="numb">38</span>Карусель</div>
+					<div class="popup-table__item"><span class="numb">39</span>Красная линия</div>
+					<div class="popup-table__item"><span class="numb">40</span>Крик ТВ</div>
+					<div class="popup-table__item"><span class="numb">41</span>Крым24</div>
+					<div class="popup-table__item"><span class="numb">42</span>Курай-ТВ</div>
+					<div class="popup-table__item"><span class="numb">43</span>ЛДПР ТВ</div>
+					<div class="popup-table__item"><span class="numb">44</span>Майдан</div>
+					<div class="popup-table__item"><span class="numb">45</span>Матч ТВ</div>
+					<div class="popup-table__item"><span class="numb">46</span>Министерство Идей</div>
+					<div class="popup-table__item"><span class="numb">47</span>Смайлик</div>
+
+					<div class="popup-table__item"><span class="numb">48</span>Мир24</div>
+					<div class="popup-table__item"><span class="numb">49</span>Муз-ТВ</div>
+					<div class="popup-table__item"><span class="numb">50</span>НТВ</div>
+					<div class="popup-table__item"><span class="numb">51</span>Ювелирочка Мода</div>
+					<div class="popup-table__item"><span class="numb">52</span>Открытый мир</div>
+					<div class="popup-table__item"><span class="numb">53</span>ОТР</div>
+					<div class="popup-table__item"><span class="numb">54</span>Первый</div>
+					<div class="popup-table__item"><span class="numb">55</span>Первый HD</div>
+					<div class="popup-table__item"><span class="numb">56</span>Первый образовательный</div>
+					<div class="popup-table__item"><span class="numb">57</span>Про Бизнес</div>
+					<div class="popup-table__item"><span class="numb">58</span>Просвещение</div>
+					<div class="popup-table__item"><span class="numb">59</span>ПЯТНИЦА!</div>
+					<div class="popup-table__item"><span class="numb">60</span>Раз ТВ</div>
+					<div class="popup-table__item"><span class="numb">61</span>РБК</div>
+					<div class="popup-table__item"><span class="numb">62</span>РЕН ТВ</div>
+					<div class="popup-table__item"><span class="numb">63</span>РЖД ТВ HD</div>
+					<div class="popup-table__item"><span class="numb">64</span>Россия</div>
+					<div class="popup-table__item"><span class="numb">65</span>Россия 24</div>
+					<div class="popup-table__item"><span class="numb">66</span>Россия HD</div>
+					<div class="popup-table__item"><span class="numb">67</span>Россия К</div>
+					<div class="popup-table__item"><span class="numb">68</span>Рубль</div>
+					<div class="popup-table__item"><span class="numb">69</span>Санкт-Петербург</div>
+					<div class="popup-table__item"><span class="numb">70</span>Союз</div>
+					<div class="popup-table__item"><span class="numb">71</span>Спас</div>
+					<div class="popup-table__item"><span class="numb">72</span>СТС</div>
+
+					<div class="popup-table__item"><span class="numb">73</span>ТВ 3</div>
+					<div class="popup-table__item"><span class="numb">74</span>ТВ Центр</div>
+					<div class="popup-table__item"><span class="numb">75</span>Твой дом </div>
+					<div class="popup-table__item"><span class="numb">76</span>Твой дом HD</div>
+					<div class="popup-table__item"><span class="numb">77</span>ТДК</div>
+					<div class="popup-table__item"><span class="numb">78</span>ТелеБалтНьюс</div>
+					<div class="popup-table__item"><span class="numb">79</span>Телеканал 2x2</div>
+					<div class="popup-table__item"><span class="numb">80</span>Телеканал 360 HD</div>
+					<div class="popup-table__item"><span class="numb">81</span>ТНТ</div>
+					<div class="popup-table__item"><span class="numb">82</span>ТНТ MUSIC</div>
+					<div class="popup-table__item"><span class="numb">83</span>Точка ТВ</div>
+					<div class="popup-table__item"><span class="numb">84</span>Три ангела</div>
+					<div class="popup-table__item"><span class="numb">85</span>БелРос</div>
+					<div class="popup-table__item"><span class="numb">86</span>Успех</div>
+					<div class="popup-table__item"><span class="numb">87</span>Царьград</div>
+					<div class="popup-table__item"><span class="numb">88</span>Че</div>
+					<div class="popup-table__item"><span class="numb">89</span>Ю</div>
+					<div class="popup-table__item"><span class="numb">90</span>Ювелирочка</div>
+					<div class="popup-table__item"><span class="numb">91</span>Ямал-Регион</div>
+					<div class="popup-table__item"></div>
+					<div class="popup-table__item"></div>
+					<div class="popup-table__item"></div>
+					<div class="popup-table__item"></div>
+					<div class="popup-table__item"></div>
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">от 80 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_home">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «ДОМАШНИЙ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 965px;">
+					<div class="popup-table__item"><span class="numb">1</span>5 канал</div>
+					<div class="popup-table__item"><span class="numb">2</span>7TV</div>
+					<div class="popup-table__item"><span class="numb">3</span>8 канал</div>
+					<div class="popup-table__item"><span class="numb">4</span>9 Волна</div>
+					<div class="popup-table__item"><span class="numb">5</span>A1</div>
+					<div class="popup-table__item"><span class="numb">6</span>Arrirang TV</div>
+					<div class="popup-table__item"><span class="numb">7</span>CBS Reality</div>
+					<div class="popup-table__item"><span class="numb">8</span>Deutsche Welle</div>
+					<div class="popup-table__item"><span class="numb">9</span>Disney Channel</div>
+					<div class="popup-table__item"><span class="numb">10</span>France 24</div>
+					<div class="popup-table__item"><span class="numb">11</span>GlobalStar TV</div>
+					<div class="popup-table__item"><span class="numb">12</span>Hard Life TV</div>
+					<div class="popup-table__item"><span class="numb">13</span>History</div>
+					<div class="popup-table__item"><span class="numb">14</span>KBS World</div>
+					<div class="popup-table__item"><span class="numb">15</span>78</div>
+					<div class="popup-table__item"><span class="numb">16</span>Luxury World</div>
+					<div class="popup-table__item"><span class="numb">17</span>Musicbox</div>
+					<div class="popup-table__item"><span class="numb">18</span>NHK World TV</div>
+					<div class="popup-table__item"><span class="numb">19</span>NHK World TV HD</div>
+					<div class="popup-table__item"><span class="numb">20</span>Noise</div>
+					<div class="popup-table__item"><span class="numb">21</span>O2TV</div>
+					<div class="popup-table__item"><span class="numb">22</span>Ovideo.ru</div>
+					<div class="popup-table__item"><span class="numb">23</span>RT</div>
+					<div class="popup-table__item"><span class="numb">24</span>RT HD</div>
+					<div class="popup-table__item"><span class="numb">25</span>RTД HD</div>
+					<div class="popup-table__item"><span class="numb">26</span>RU.TV</div>
+					<div class="popup-table__item"><span class="numb">27</span>Russian Musicbox</div>
+					<div class="popup-table__item"><span class="numb">28</span>SET</div>
+					<div class="popup-table__item"><span class="numb">29</span>Shop 24</div>
+					<div class="popup-table__item"><span class="numb">30</span>Shop&Show</div>
+					<div class="popup-table__item"><span class="numb">31</span>Shopping Live</div>
+
+					<div class="popup-table__item"><span class="numb">32</span>Slow TV</div>
+					<div class="popup-table__item"><span class="numb">33</span>Sony Sci-fi Russia</div>
+					<div class="popup-table__item"><span class="numb">34</span>Sony Turbo</div>
+					<div class="popup-table__item"><span class="numb">35</span>TMB</div>
+					<div class="popup-table__item"><span class="numb">36</span>TOPSHOP TV</div>
+					<div class="popup-table__item"><span class="numb">37</span>TV Mall</div>
+					<div class="popup-table__item"><span class="numb">38</span>TV Sale</div>
+					<div class="popup-table__item"><span class="numb">39</span>TV5Monde линия</div>
+					<div class="popup-table__item"><span class="numb">40</span>TVMChannel</div>
+					<div class="popup-table__item"><span class="numb">41</span>World Fashion</div>
+					<div class="popup-table__item"><span class="numb">42</span>Архыз24-ТВ</div>
+					<div class="popup-table__item"><span class="numb">43</span>Бокс ТВ</div>
+					<div class="popup-table__item"><span class="numb">44</span>Большая Азия</div>
+					<div class="popup-table__item"><span class="numb">45</span>БСТ</div>
+					<div class="popup-table__item"><span class="numb">46</span>Вместе.РФ</div>
+					<div class="popup-table__item"><span class="numb">47</span>Детский мир </div>
+					<div class="popup-table__item"><span class="numb">48</span>Домашний</div>
+					<div class="popup-table__item"><span class="numb">49</span>Еврокино</div>
+					<div class="popup-table__item"><span class="numb">50</span>Европа Плюс ТВ</div>
+					<div class="popup-table__item"><span class="numb">51</span>Егэ-ТВ</div>
+					<div class="popup-table__item"><span class="numb">52</span>Звезда</div>
+					<div class="popup-table__item"><span class="numb">53</span>Иллюзион+</div>
+					<div class="popup-table__item"><span class="numb">54</span>ИНДИЙСКОЕ КИНО</div>
+					<div class="popup-table__item"><span class="numb">55</span>Калейдоскоп ТВ</div>
+					<div class="popup-table__item"><span class="numb">56</span>Карусель</div>
+					<div class="popup-table__item"><span class="numb">57</span>КВН ТВ</div>
+					<div class="popup-table__item"><span class="numb">58</span>КИНОКОМЕДИЯ</div>
+					<div class="popup-table__item"><span class="numb">59</span>Красная линия!</div>
+					<div class="popup-table__item"><span class="numb">60</span>Крик ТВ</div>
+					<div class="popup-table__item"><span class="numb">61</span>Крым24</div>
+					<div class="popup-table__item"><span class="numb">62</span>Курай-ТВ</div>
+
+					<div class="popup-table__item"><span class="numb">63</span>ЛДПР ТВ</div>
+					<div class="popup-table__item"><span class="numb">64</span>Любимое кино</div>
+					<div class="popup-table__item"><span class="numb">65</span>Майдан</div>
+					<div class="popup-table__item"><span class="numb">66</span>Матч ТВ</div>
+					<div class="popup-table__item"><span class="numb">67</span>МАТЧ! НАШ СПОРТ</div>
+					<div class="popup-table__item"><span class="numb">68</span>Министерство Идей</div>
+					<div class="popup-table__item"><span class="numb">69</span>Мир</div>
+					<div class="popup-table__item"><span class="numb">70</span>Мир сериала</div>
+					<div class="popup-table__item"><span class="numb">71</span>Мир24</div>
+					<div class="popup-table__item"><span class="numb">72</span>Муз-ТВ</div>
+					<div class="popup-table__item"><span class="numb">73</span>НАШЕ НОВОЕ КИНО</div>
+					<div class="popup-table__item"><span class="numb">74</span>Ностальгия</div>
+					<div class="popup-table__item"><span class="numb">75</span>НТВ </div>
+					<div class="popup-table__item"><span class="numb">76</span>Ювелирочка Мода</div>
+					<div class="popup-table__item"><span class="numb">77</span>Открытый мир</div>
+					<div class="popup-table__item"><span class="numb">78</span>ОТР</div>
+					<div class="popup-table__item"><span class="numb">79</span>Первый</div>
+					<div class="popup-table__item"><span class="numb">80</span>Первый HD</div>
+					<div class="popup-table__item"><span class="numb">81</span>Первый образовательный</div>
+					<div class="popup-table__item"><span class="numb">82</span>Пингвин ЛОЛО</div>
+					<div class="popup-table__item"><span class="numb">83</span>Про Бизнес</div>
+					<div class="popup-table__item"><span class="numb">84</span>Просвещение</div>
+					<div class="popup-table__item"><span class="numb">85</span>ПЯТНИЦА!</div>
+					<div class="popup-table__item"><span class="numb">86</span>Раз ТВ</div>
+					<div class="popup-table__item"><span class="numb">87</span>РБК</div>
+					<div class="popup-table__item"><span class="numb">88</span>РЕН ТВ</div>
+					<div class="popup-table__item"><span class="numb">89</span>РЖД ТВ HD</div>
+					<div class="popup-table__item"><span class="numb">90</span>Россия</div>
+					<div class="popup-table__item"><span class="numb">91</span>Россия 24</div>
+					<div class="popup-table__item"><span class="numb">92</span>Россия HD</div>
+					<div class="popup-table__item"><span class="numb">93</span>Россия К</div>
+
+					<div class="popup-table__item"><span class="numb">94</span>Рубль</div>
+					<div class="popup-table__item"><span class="numb">95</span>Русский Иллюзион</div>
+					<div class="popup-table__item"><span class="numb">96</span>Санкт-Петербург</div>
+					<div class="popup-table__item"><span class="numb">97</span>Смайлик</div>
+					<div class="popup-table__item"><span class="numb">98</span>Сочи HD</div>
+					<div class="popup-table__item"><span class="numb">99</span>Союз</div>
+					<div class="popup-table__item"><span class="numb">100</span>Спас</div>
+					<div class="popup-table__item"><span class="numb">101</span>СТС</div>
+					<div class="popup-table__item"><span class="numb">102</span>ТВ 3</div>
+					<div class="popup-table__item"><span class="numb">103</span>ТВ Центр</div>
+					<div class="popup-table__item"><span class="numb">104</span>Твой дом </div>
+					<div class="popup-table__item"><span class="numb">105</span>Твой дом HD</div>
+					<div class="popup-table__item"><span class="numb">106</span>ТДК</div>
+					<div class="popup-table__item"><span class="numb">107</span>ТелеБалтНьюс</div>
+					<div class="popup-table__item"><span class="numb">108</span>Теледом HD</div>
+					<div class="popup-table__item"><span class="numb">109</span>Телеканал 2x2</div>
+					<div class="popup-table__item"><span class="numb">110</span>Телеканал 360 HD</div>
+					<div class="popup-table__item"><span class="numb">111</span>ТНТ</div>
+					<div class="popup-table__item"><span class="numb">112</span>ТНТ MUSIC</div>
+					<div class="popup-table__item"><span class="numb">113</span>Точка ТВ</div>
+					<div class="popup-table__item"><span class="numb">114</span>Три ангела</div>
+					<div class="popup-table__item"><span class="numb">115</span>БелРос</div>
+					<div class="popup-table__item"><span class="numb">116</span>Успех</div>
+					<div class="popup-table__item"><span class="numb">117</span>Царьград</div>
+					<div class="popup-table__item"><span class="numb">118</span>Че</div>
+					<div class="popup-table__item"><span class="numb">119</span>Ю</div>
+					<div class="popup-table__item"><span class="numb">120</span>Ювелирочка</div>
+					<div class="popup-table__item"><span class="numb">121</span>Юмор Box</div>
+					<div class="popup-table__item"><span class="numb">122</span>Ямал-Регион</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">149 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_max">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «МАКСИМАЛЬНЫЙ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 1340px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>365 Дней</div>
+					<div class="popup-table__item"><span class="numb">2</span>5 канал</div>
+					<div class="popup-table__item"><span class="numb">3</span>7TV</div>
+					<div class="popup-table__item"><span class="numb">4</span>8 канал</div>
+					<div class="popup-table__item"><span class="numb">5</span>9 Волна</div>
+					<div class="popup-table__item"><span class="numb">6</span>A1</div>
+					<div class="popup-table__item"><span class="numb">7</span>Arrirang TV</div>
+					<div class="popup-table__item"><span class="numb">8</span>Bridge TV</div>
+					<div class="popup-table__item"><span class="numb">9</span>BRIDGE TV CLASSIC</div>
+					<div class="popup-table__item"><span class="numb">10</span>BRIDGE TV DANCE</div>
+					<div class="popup-table__item"><span class="numb">11</span>CBS Reality</div>
+					<div class="popup-table__item"><span class="numb">12</span>Deutsche Welle</div>
+					<div class="popup-table__item"><span class="numb">13</span>Disney Channel</div>
+					<div class="popup-table__item"><span class="numb">14</span>English Club</div>
+					<div class="popup-table__item"><span class="numb">15</span>Euronews</div>
+					<div class="popup-table__item"><span class="numb">16</span>Extreme Sports</div>
+					<div class="popup-table__item"><span class="numb">17</span>France 24</div>
+					<div class="popup-table__item"><span class="numb">18</span>GlobalStar TV</div>
+					<div class="popup-table__item"><span class="numb">19</span>Hard Life TV</div>
+					<div class="popup-table__item"><span class="numb">20</span>History</div>
+					<div class="popup-table__item"><span class="numb">21</span>JimJam</div>
+					<div class="popup-table__item"><span class="numb">22</span>KBS World</div>
+					<div class="popup-table__item"><span class="numb">23</span>78</div>
+					<div class="popup-table__item"><span class="numb">24</span>Luxury World</div>
+					<div class="popup-table__item"><span class="numb">25</span>Musicbox</div>
+					<div class="popup-table__item"><span class="numb">26</span>NHK World TV</div>
+					<div class="popup-table__item"><span class="numb">27</span>NHK World TV HD</div>
+					<div class="popup-table__item"><span class="numb">28</span>Noise</div>
+					<div class="popup-table__item"><span class="numb">29</span>O2TV</div>
+					<div class="popup-table__item"><span class="numb">30</span>Ocean TV</div>
+					<div class="popup-table__item"><span class="numb">31</span>Outdoor Channel</div>
+					<div class="popup-table__item"><span class="numb">32</span>Ovideo.ru</div>
+					<div class="popup-table__item"><span class="numb">33</span>RT</div>
+					<div class="popup-table__item"><span class="numb">34</span>RT HD</div>
+					<div class="popup-table__item"><span class="numb">35</span>RTG TV</div>
+					<div class="popup-table__item"><span class="numb">36</span>RTД HD</div>
+					<div class="popup-table__item"><span class="numb">37</span>RU.TV</div>
+					<div class="popup-table__item"><span class="numb">38</span>Rusong TV</div>
+					<div class="popup-table__item"><span class="numb">39</span>Russian Musicbox</div>
+					<div class="popup-table__item"><span class="numb">40</span>SET</div>
+					<div class="popup-table__item"><span class="numb">41</span>Shop 24</div>
+					<div class="popup-table__item"><span class="numb">42</span>Shop&Show</div>
+					<div class="popup-table__item"><span class="numb">43</span>Shopping Live</div>
+					<div class="popup-table__item"><span class="numb">44</span>Slow TV</div>
+
+					<div class="popup-table__item"><span class="numb">45</span>Sony Sci-fi Russi</div>
+					<div class="popup-table__item"><span class="numb">46</span>Sony Turbo</div>
+					<div class="popup-table__item"><span class="numb">47</span>TiJi</div>
+					<div class="popup-table__item"><span class="numb">48</span>TMB</div>
+					<div class="popup-table__item"><span class="numb">49</span>TOPSHOP TV</div>
+					<div class="popup-table__item"><span class="numb">50</span>Travel+Adventure</div>
+					<div class="popup-table__item"><span class="numb">51</span>Tr!ck</div>
+					<div class="popup-table__item"><span class="numb">52</span>TV Mall</div>
+					<div class="popup-table__item"><span class="numb">53</span>TV Sale</div>
+					<div class="popup-table__item"><span class="numb">54</span>TV5Monde</div>
+					<div class="popup-table__item"><span class="numb">55</span>TVMChannel</div>
+					<div class="popup-table__item"><span class="numb">56</span>World business ch</div>
+					<div class="popup-table__item"><span class="numb">57</span>World Fashion</div>
+					<div class="popup-table__item"><span class="numb">58</span>Zee Russia</div>
+					<div class="popup-table__item"><span class="numb">59</span>Авто Плюс</div>
+					<div class="popup-table__item"><span class="numb">60</span>Архыз24</div>
+					<div class="popup-table__item"><span class="numb">61</span>Бокс ТВ</div>
+					<div class="popup-table__item"><span class="numb">62</span>Большая Азия</div>
+					<div class="popup-table__item"><span class="numb">63</span>БСТ</div>
+					<div class="popup-table__item"><span class="numb">64</span>Вместе.РФ</div>
+					<div class="popup-table__item"><span class="numb">65</span>Детский</div>
+					<div class="popup-table__item"><span class="numb">66</span>Детский мир </div>
+					<div class="popup-table__item"><span class="numb">67</span>Домашний</div>
+					<div class="popup-table__item"><span class="numb">68</span>Еврокино</div>
+					<div class="popup-table__item"><span class="numb">69</span>Европа Плюс ТВ</div>
+					<div class="popup-table__item"><span class="numb">70</span>Егэ-ТВ</div>
+					<div class="popup-table__item"><span class="numb">71</span>Еда</div>
+					<div class="popup-table__item"><span class="numb">72</span>Жара</div>
+					<div class="popup-table__item"><span class="numb">73</span>Живи</div>
+					<div class="popup-table__item"><span class="numb">74</span>Загородная жизнь</div>
+					<div class="popup-table__item"><span class="numb">75</span>Звезда</div>
+					<div class="popup-table__item"><span class="numb">76</span>Зоопарк</div>
+					<div class="popup-table__item"><span class="numb">77</span>Иллюзион+</div>
+					<div class="popup-table__item"><span class="numb">78</span>ИНДИЙСКОЕ КИНО</div>
+					<div class="popup-table__item"><span class="numb">79</span>Калейдоскоп ТВ</div>
+					<div class="popup-table__item"><span class="numb">80</span>Карусель</div>
+					<div class="popup-table__item"><span class="numb">81</span>КВН ТВ</div>
+					<div class="popup-table__item"><span class="numb">82</span>КИНОКОМЕДИЯ</div>
+					<div class="popup-table__item"><span class="numb">83</span>Киномикс</div>
+					<div class="popup-table__item"><span class="numb">84</span>КИНОСЕРИЯ</div>
+					<div class="popup-table__item"><span class="numb">85</span>Красная линия</div>
+					<div class="popup-table__item"><span class="numb">86</span>Крик ТВ</div>
+					<div class="popup-table__item"><span class="numb">87</span>Крым24</div>
+					<div class="popup-table__item"><span class="numb">88</span>Кто есть кто</div>
+
+					<div class="popup-table__item"><span class="numb">89</span>Кубань 24</div>
+					<div class="popup-table__item"><span class="numb">90</span>Кубань 24 Орбита</div>
+					<div class="popup-table__item"><span class="numb">91</span>Курай-ТВ</div>
+					<div class="popup-table__item"><span class="numb">92</span>Кухня ТВ</div>
+					<div class="popup-table__item"><span class="numb">93</span>КХЛ ТВ</div>
+					<div class="popup-table__item"><span class="numb">94</span>ЛДПР ТВ</div>
+					<div class="popup-table__item"><span class="numb">95</span>Любимое кино</div>
+					<div class="popup-table__item"><span class="numb">96</span>Ля-минор</div>
+					<div class="popup-table__item"><span class="numb">97</span>Майдан</div>
+					<div class="popup-table__item"><span class="numb">98</span>Малыш</div>
+					<div class="popup-table__item"><span class="numb">99</span>Матч ТВ</div>
+					<div class="popup-table__item"><span class="numb">100</span>МАТЧ! АРЕНА</div>
+					<div class="popup-table__item"><span class="numb">101</span>МАТЧ! БОЕЦ</div>
+					<div class="popup-table__item"><span class="numb">102</span>МАТЧ! ИГРА</div>
+					<div class="popup-table__item"><span class="numb">103</span>МАТЧ! НАШ СПОРТ</div>
+					<div class="popup-table__item"><span class="numb">104</span>Министерство Идей</div>
+					<div class="popup-table__item"><span class="numb">105</span>Мир</div>
+					<div class="popup-table__item"><span class="numb">106</span>Мир сериала</div>
+					<div class="popup-table__item"><span class="numb">107</span>Мир24</div>
+					<div class="popup-table__item"><span class="numb">108</span>Мужское кино</div>
+					<div class="popup-table__item"><span class="numb">109</span>Мужской</div>
+					<div class="popup-table__item"><span class="numb">110</span>Муз-ТВ</div>
+					<div class="popup-table__item"><span class="numb">111</span>Мультимания</div>
+					<div class="popup-table__item"><span class="numb">112</span>Нано ТВ</div>
+					<div class="popup-table__item"><span class="numb">113</span>НАШЕ НОВОЕ КИНО</div>
+					<div class="popup-table__item"><span class="numb">114</span>Ностальгия</div>
+					<div class="popup-table__item"><span class="numb">115</span>НТВ</div>
+					<div class="popup-table__item"><span class="numb">116</span>НТВ Право</div>
+					<div class="popup-table__item"><span class="numb">117</span>НТВ Сериал</div>
+					<div class="popup-table__item"><span class="numb">118</span>НТВ Стиль</div>
+					<div class="popup-table__item"><span class="numb">119</span>Ювелирочка Мода</div>
+					<div class="popup-table__item"><span class="numb">120</span>Открытый мир</div>
+					<div class="popup-table__item"><span class="numb">121</span>ОТР</div>
+					<div class="popup-table__item"><span class="numb">122</span>Первый</div>
+					<div class="popup-table__item"><span class="numb">123</span>Первый HD</div>
+					<div class="popup-table__item"><span class="numb">124</span>Первый образовательный</div>
+					<div class="popup-table__item"><span class="numb">125</span>Пингвин ЛОЛО</div>
+					<div class="popup-table__item"><span class="numb">126</span>Про Бизнес</div>
+					<div class="popup-table__item"><span class="numb">127</span>Просвещение</div>
+					<div class="popup-table__item"><span class="numb">128</span>ПЯТНИЦА!</div>
+					<div class="popup-table__item"><span class="numb">129</span>Радость моя</div>
+					<div class="popup-table__item"><span class="numb">130</span>Раз ТВ</div>
+					<div class="popup-table__item"><span class="numb">131</span>РБК</div>
+					<div class="popup-table__item"><span class="numb">132</span>РЕН ТВ</div>
+
+					<div class="popup-table__item"><span class="numb">133</span>РЖД ТВ HD</div>
+					<div class="popup-table__item"><span class="numb">134</span>Родное кино</div>
+					<div class="popup-table__item"><span class="numb">135</span>Россия</div>
+					<div class="popup-table__item"><span class="numb">136</span>Россия 24</div>
+					<div class="popup-table__item"><span class="numb">137</span>Россия HD</div>
+					<div class="popup-table__item"><span class="numb">138</span>Россия К</div>
+					<div class="popup-table__item"><span class="numb">139</span>Рубль</div>
+					<div class="popup-table__item"><span class="numb">140</span>Русский Иллюзион</div>
+					<div class="popup-table__item"><span class="numb">141</span>Санкт-Петербург</div>
+					<div class="popup-table__item"><span class="numb">142</span>Смайлик</div>
+					<div class="popup-table__item"><span class="numb">143</span>Совершенно секрет</div>
+					<div class="popup-table__item"><span class="numb">144</span>Сочи HD</div>
+					<div class="popup-table__item"><span class="numb">145</span>Союз</div>
+					<div class="popup-table__item"><span class="numb">146</span>Спас</div>
+					<div class="popup-table__item"><span class="numb">147</span>СТС</div>
+					<div class="popup-table__item"><span class="numb">148</span>СТС-Love</div>
+					<div class="popup-table__item"><span class="numb">149</span>ТВ 3</div>
+					<div class="popup-table__item"><span class="numb">150</span>ТВ Центр</div>
+					<div class="popup-table__item"><span class="numb">151</span>Твой дом </div>
+					<div class="popup-table__item"><span class="numb">152</span>Твой дом HD</div>
+					<div class="popup-table__item"><span class="numb">153</span>ТДК</div>
+					<div class="popup-table__item"><span class="numb">154</span>ТелеБалтНьюс</div>
+					<div class="popup-table__item"><span class="numb">155</span>Теледом HD</div>
+					<div class="popup-table__item"><span class="numb">156</span>Телеканал 2x2</div>
+					<div class="popup-table__item"><span class="numb">157</span>Телеканал 360 HD</div>
+					<div class="popup-table__item"><span class="numb">158</span>ТНВ-Планета</div>
+					<div class="popup-table__item"><span class="numb">159</span>ТНВ-Татарстан</div>
+					<div class="popup-table__item"><span class="numb">160</span>ТНТ</div>
+					<div class="popup-table__item"><span class="numb">161</span>ТНТ MUSIC</div>
+					<div class="popup-table__item"><span class="numb">162</span>Точка ТВ</div>
+					<div class="popup-table__item"><span class="numb">163</span>Три ангела</div>
+					<div class="popup-table__item"><span class="numb">164</span>БелРос</div>
+					<div class="popup-table__item"><span class="numb">165</span>Успех</div>
+					<div class="popup-table__item"><span class="numb">166</span>Футбол</div>
+					<div class="popup-table__item"><span class="numb">167</span>Царьград</div>
+					<div class="popup-table__item"><span class="numb">168</span>Че</div>
+					<div class="popup-table__item"><span class="numb">169</span>Шансон ТВ</div>
+					<div class="popup-table__item"><span class="numb">170</span>Ю</div>
+					<div class="popup-table__item"><span class="numb">171</span>Ювелирочка</div>
+					<div class="popup-table__item"><span class="numb">172</span>Юмор Box</div>
+					<div class="popup-table__item"><span class="numb">173</span>Ямал-Регион</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">309 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_hd">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «HD»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 200px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>AnyDay HD</div>
+					<div class="popup-table__item"><span class="numb">2</span>Glazella HD</div>
+					<div class="popup-table__item"><span class="numb">3</span>HD Life</div>
+					<div class="popup-table__item"><span class="numb">4</span>HD media</div>
+					<div class="popup-table__item"><span class="numb">5</span>KBS World</div>
+					<div class="popup-table__item"><span class="numb">6</span>Mute HD</div>
+
+					<div class="popup-table__item"><span class="numb">7</span>NHK World TV HD</div>
+					<div class="popup-table__item"><span class="numb">8</span>RT HD</div>
+					<div class="popup-table__item"><span class="numb">9</span>RTG HD</div>
+					<div class="popup-table__item"><span class="numb">10</span>RTД HD</div>
+					<div class="popup-table__item"><span class="numb">11</span>Slow TV HD</div>
+					<div class="popup-table__item"><span class="numb">12</span>Travel+Adventure HD</div>
+
+					<div class="popup-table__item"><span class="numb">13</span>World business channel HD</div>
+					<div class="popup-table__item"><span class="numb">14</span>Еда HD</div>
+					<div class="popup-table__item"><span class="numb">15</span>КХЛ HD</div>
+					<div class="popup-table__item"><span class="numb">16</span>МАТЧ! АРЕНА HD</div>
+					<div class="popup-table__item"><span class="numb">17</span>МАТЧ! ИГРА HD</div>
+					<div class="popup-table__item"><span class="numb">18</span>Мир HD</div>
+					
+					<div class="popup-table__item"><span class="numb">19</span>Первый HD</div>
+					<div class="popup-table__item"><span class="numb">20</span>РЖД ТВ HD</div>
+					<div class="popup-table__item"><span class="numb">21</span>Россия HD</div>
+					<div class="popup-table__item"><span class="numb">22</span>Твой дом HD</div>
+					<div class="popup-table__item"><span class="numb">23</span>Теледом HD</div>
+					<div class="popup-table__item"><span class="numb">24</span>Телеканал 360 HD</div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">280 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<!-- <div id="modal_packettv_3d">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «3D»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 750px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>AnyDay 3D HD</div>
+					<div class="popup-table__item"><span class="numb">2</span>AnyDay HD</div>
+
+					<div class="popup-table__item"><span class="numb">3</span>Glazella 3D HD</div>
+					<div class="popup-table__item"><span class="numb">4</span>Glazella HD</div>
+
+					<div class="popup-table__item"><span class="numb">5</span>Mute TV 3D HD</div>
+					<div class="popup-table__item"><span class="numb">6</span>Mute TV HD</div>
+
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">149 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div> -->
+
+
+		<div id="modal_packettv_amedia">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «АМЕДИА»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 50px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>A1</div>
+					<div class="popup-table__item"><span class="numb">2</span>Amedia Premium HD</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">99 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_night">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «НЕСКУЧНАЯ НОЧЬ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 50px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>Brazzers</div>
+					<div class="popup-table__item"><span class="numb">2</span>Play Boy</div>
+					<div class="popup-table__item"><span class="numb">3</span>Русская ночь</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">199 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_ourfotball">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «НАШ ФУТБОЛ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 50px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>Наш Футбол</div>
+					<div class="popup-table__item"><span class="numb">2</span>Наш Футбол HD</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">219 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_nastroykino">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «НАСТРОЙ КИНО!»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 50px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>КИНОПРЕМЬЕРА</div>
+					<div class="popup-table__item"><span class="numb">2</span>КИНОСВИДАНИЕ</div>
+					<div class="popup-table__item"><span class="numb">3</span>КИНОСЕМЬЯ</div>
+					<div class="popup-table__item"><span class="numb">4</span>КИНОХИТ</div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">380 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_match">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «МАТЧ! ФУТБОЛ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 90px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>МАТЧ! ФУТБОЛ 1 HD</div>
+					<div class="popup-table__item"><span class="numb">2</span>МАТЧ! ФУТБОЛ 1 SD</div>
+					<div class="popup-table__item"><span class="numb">3</span>МАТЧ! ФУТБОЛ 2 HD</div>
+					<div class="popup-table__item"><span class="numb">4</span>МАТЧ! ФУТБОЛ 2 SD</div>
+
+					<div class="popup-table__item"><span class="numb">5</span>МАТЧ! ФУТБОЛ 3 HD</div>
+					<div class="popup-table__item"><span class="numb">6</span>МАТЧ! ФУТБОЛ 3 SD</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">380 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+		<div id="modal_packettv_egoist">
+			<div class="popup-table">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<h3 class="title">ПАКЕТ «ЭГОИСТ»</h3>
+
+				<div class="popup-table__wrap" style="max-height: 50px;">
+
+					<div class="popup-table__item"><span class="numb">1</span>Эгоист-ТВ</div>
+					<div class="popup-table__item"><span class="numb">2</span>НЮ АРТ ТВ</div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+					<div class="popup-table__item"><span class="numb"></span></div>
+
+				</div>
+
+				<div class="popup-table__price">Стоимость пакета: <span class="red">380 руб/мес</span></div>
+				<div class="main-btn popup-table__btn cifr_tv">Подключить пакет</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- scripts -->
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>

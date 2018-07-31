@@ -1,0 +1,26 @@
+@import "bourbon";
+
+//color
+$main-color: #231F20;
+$red-color: #EF4135;
+$blue-color: #1881AC;
+$yellow-color: #FAF4E3;
+$yellow-bg: #FCFAF4;
+
+
+@mixin btn-gradient() {
+	
+}
+
+//font
+$m100: "MuseoSans100", sans-serif;
+$m300: "MuseoSans300", sans-serif;
+$m500: "MuseoSans500", sans-serif;
+$m700: "MuseoSans700", sans-serif;
+$m900: "MuseoSans900", sans-serif;
+
+//viewport size
+$desktop: "1200px";
+$tablet: "992px";
+$phone: "768px";
+$extra-small: "480px";

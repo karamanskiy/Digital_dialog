@@ -1,0 +1,9 @@
+@import "bourbon";
+
+@include font-face("MuseoSans100", "../fonts/MuseoSans/MuseoSansCyrl-100", $file-formats: eot woff woff2 ttf);
+@include font-face("MuseoSans300", "../fonts/MuseoSans/MuseoSansCyrl-300", $file-formats: eot woff woff2 ttf);
+@include font-face("MuseoSans500", "../fonts/MuseoSans/MuseoSansCyrl-500", $file-formats: eot woff woff2 ttf);
+@include font-face("MuseoSans700", "../fonts/MuseoSans/MuseoSansCyrl-700", $file-formats: eot woff woff2 ttf);
+@include font-face("MuseoSans900", "../fonts/MuseoSans/MuseoSansCyrl-900", $file-formats: eot woff woff2 ttf);
+
+// @import "../libs/font-awesome/scss/font-awesome";

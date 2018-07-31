@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "MuseoSans300", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #231F20;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 0 !important; }
+
+a, a:visited, a:focus {
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+
+a:hover {
+  text-decoration: none;
+  outline: none; }
+
+a:focus {
+  outline: none;
+  text-decoration: none; }
+
+input:focus, textarea:focus, button:focus {
+  outline: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.1; }
+
+p {
+  font-size: 18px;
+  line-height: 25px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%; }
+
+ul, ol {
+  padding-left: 0; }
+
+li {
+  list-style: none; }
+
+.clear, .clearfix {
+  clear: both; }
+
+/* Стили хедера */
